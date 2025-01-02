@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="html-bg">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us - Modern Blog</title>
+		<link rel="stylesheet" href="./src/bulma.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./src/index.css" />
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+		<script src="./src/index.js" type="module" defer></script>
+		<style>
+			/* .contact-form {
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+				border-radius: 10px;
+				overflow: hidden;
+			}
+			.contact-info {
+				background-color: #3273dc;
+				color: white;
+			}
+			.contact-info .title,
+			.contact-info .subtitle {
+				color: white;
+			}
+			.icon-text {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1rem;
+			}
+			.icon-text .icon {
+				margin-right: 1rem;
+			}
+			body.dark-mode .contact-form {
+				background-color: #2c2c2c;
+			}
+			body.dark-mode .contact-info {
+				background-color: #4a4a4a;
+			}
+			body.dark-mode .input,
+			body.dark-mode .textarea {
+				background-color: #363636;
+				color: #f5f5f5;
+				border-color: #4a4a4a;
+			}
+			body.dark-mode .label {
+				color: #f5f5f5;
+			}
+
+			body {
+				font-family: sans-serif;
+			} */
+		</style>
+	</head>
+	<body>
+		<!-- Loading -->
+		<div class="pageloading">
+			<progress class="progress is-large is-danger" max="100">60%</progress>
+		</div>
+		<nav
+			class="navbar is-fixed-bottom"
+			role="navigation"
+			aria-label="main navigation"
+		>
+			<div class="container">
+				<div class="navbar-menu">
+					<a class="navbar-item" href="index.html">
+						<span class="icon">
+							<i class="fas fa-home"></i>
+						</span>
+					</a>
+					<a class="navbar-item" href="contact.html">
+						<span class="icon">
+							<i class="fas fa-envelope"></i>
+						</span>
+					</a>
+					<a class="navbar-item" id="theme-toggle">
+						<span class="icon">
+							<i class="fas fa-sun"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<section class="section">
+			<div class="container">
+				<h1 class="title has-text-centered">Contact Us</h1>
+				<h2 class="subtitle has-text-centered">We'd love to hear from you!</h2>
+
+				<div class="columns is-centered mt-6">
+					<div class="column is-10">
+						<div class="columns contact-form">
+							<div class="column is-5 contact-info p-5">
+								<h3 class="title is-4">Get in Touch</h3>
+								<p class="mb-5">
+									Have questions or feedback? Reach out to us using the contact
+									information below or fill out the form.
+								</p>
+
+								<div class="icon-text">
+									<span class="icon">
+										<i class="fas fa-map-marker-alt"></i>
+									</span>
+									<span>123 Blog Street, City, Country</span>
+								</div>
+
+								<div class="icon-text">
+									<span class="icon">
+										<i class="fas fa-phone"></i>
+									</span>
+									<span>+1 (123) 456-7890</span>
+								</div>
+
+								<div class="icon-text">
+									<span class="icon">
+										<i class="fas fa-envelope"></i>
+									</span>
+									<span>contact@modernblog.com</span>
+								</div>
+							</div>
+							<div class="column is-7 p-5">
+								<form>
+									<div class="field">
+										<label class="label">Name</label>
+										<div class="control">
+											<input
+												class="input"
+												type="text"
+												placeholder="Your Name"
+											/>
+										</div>
+									</div>
+
+									<div class="field">
+										<label class="label">Email</label>
+										<div class="control">
+											<input
+												class="input"
+												type="email"
+												placeholder="Your Email"
+											/>
+										</div>
+									</div>
+
+									<div class="field">
+										<label class="label">Subject</label>
+										<div class="control">
+											<input class="input" type="text" placeholder="Subject" />
+										</div>
+									</div>
+
+									<div class="field">
+										<label class="label">Message</label>
+										<div class="control">
+											<textarea
+												class="textarea"
+												placeholder="Your Message"
+											></textarea>
+										</div>
+									</div>
+
+									<div class="field">
+										<div class="control">
+											<button class="button is-link is-fullwidth">
+												Send Message
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

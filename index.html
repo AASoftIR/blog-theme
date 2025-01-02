@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Modern Blog</title>
+		<link rel="stylesheet" href="./src/bulma.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./src/index.css" />
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+		<script src="./src/index.js" type="module" defer></script>
+	</head>
+	<body theme="light">
+		<!-- Loading -->
+		<div class="pageloading">
+			<progress class="progress is-large is-danger" max="100">60%</progress>
+		</div>
+		<nav
+			class="navbar is-fixed-bottom"
+			role="navigation"
+			aria-label="main navigation"
+		>
+			<div class="container">
+				<div class="navbar-menu">
+					<a class="navbar-item" href="index.html">
+						<span class="icon">
+							<i class="fas fa-home"></i>
+						</span>
+					</a>
+					<a class="navbar-item" href="contact.html">
+						<span class="icon">
+							<i class="fas fa-envelope"></i>
+						</span>
+					</a>
+					<a class="navbar-item" id="theme-toggle">
+						<span class="icon">
+							<i class="fas fa-sun"></i>
+						</span>
+					</a>
+				</div>
+			</div>
+		</nav>
+		<section class="hero is-fullheight is-dark">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<div class="is-flex is-justify-content-center is-align-items-center">
+						<h1 class="title is-1 is-capitalized" id="element"></h1>
+					</div>
+					<h2 class="subtitle is-family-monospace">
+						Explore the latest in technology, design, and lifestyle
+					</h2>
+				</div>
+			</div>
+		</section>
+		<section class="is-block is-relative py-6" style="height: 100vh">
+			<div id="bg">
+				<img src="./assets/posts/1.jpg" />
+			</div>
+			<h3
+				class="has-text-left roboto is-size-2-desktop is-size-3-tablet is-relative mx-6 my-5 py-3"
+				style="
+					z-index: 1000;
+					color: black;
+					border-top: 1px solid black;
+					border-bottom: 1px solid black;
+				"
+			>
+				Top Stories
+			</h3>
+
+			<div class="horizontal-accordion">
+				<article class="card is-active" img="1.jpg">
+					<header class="card-header">
+						<p class="card-header-title is-size-3-desktop is-size-6-tablet std">
+							Technology
+						</p>
+					</header>
+					<div class="card-content">
+						<div class="content">
+							<p class="is-size-4 helvetica  is-size-6-tablet">
+								Explore the latest technological advancements and innovations
+								shaping our future.
+							</p>
+							<button class="button is-link is-medium is-fullwidth">
+								Read More
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="card" img="2.jpg">
+					<header class="card-header">
+						<p class="card-header-title is-size-3-desktop is-size-6-tablet std">
+							Design
+						</p>
+					</header>
+					<div class="card-content">
+						<div class="content">
+							<p class="is-size-4 helvetica  is-size-6-tablet">
+								Discover modern design principles and trending aesthetic
+								approaches.
+							</p>
+							<button class="button is-link is-medium is-fullwidth">
+								Read More
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="card" img="3.jpg">
+					<header class="card-header">
+						<p class="card-header-title is-size-3-desktop is-size-6-tablet std">
+							Lifestyle
+						</p>
+					</header>
+					<div class="card-content">
+						<div class="content">
+							<p class="is-size-4 helvetica is-size-6-tablet">
+								Tips and insights for modern living and personal development.
+							</p>
+							<button class="button is-link is-medium is-fullwidth">
+								Read More
+							</button>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section posts">
+			<div class="container">
+				<h2 class="mb-6 is-size-2">Posts</h2>
+				<aside class="menu roboto">
+					<a href="blog-post.html?date=2024-01-01">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-01-01</span>&nbsp;&nbsp;&nbsp;What is This Blog About?
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-02-15">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-02-15</span>&nbsp;&nbsp;&nbsp;Understanding AI and Machine Learning
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-03-10">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-03-10</span>&nbsp;&nbsp;&nbsp;The Future of Web Development
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-04-05">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-04-05</span>&nbsp;&nbsp;&nbsp;Top 10 JavaScript Frameworks
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-05-20">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-05-20</span>&nbsp;&nbsp;&nbsp;Designing for Accessibility
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-06-15">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-06-15</span>&nbsp;&nbsp;&nbsp;The Rise of Remote Work
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-07-30">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-07-30</span>&nbsp;&nbsp;&nbsp;Cybersecurity Best Practices
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-08-25">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-08-25</span>&nbsp;&nbsp;&nbsp;Exploring Cloud Computing
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-09-10">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-09-10</span>&nbsp;&nbsp;&nbsp;The Importance of Mental Health
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-10-05">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-10-05</span>&nbsp;&nbsp;&nbsp;Advancements in Renewable Energy
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-11-20">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-11-20</span>&nbsp;&nbsp;&nbsp;The Evolution of Mobile Apps
+						</p>
+					</a>
+					<a href="blog-post.html?date=2024-12-15">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2024-12-15</span>&nbsp;&nbsp;&nbsp;Blockchain and Cryptocurrency
+						</p>
+					</a>
+					<a href="blog-post.html?date=2025-01-10">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2025-01-10</span>&nbsp;&nbsp;&nbsp;The Impact of Social Media
+						</p>
+					</a>
+					<a href="blog-post.html?date=2025-02-05">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2025-02-05</span>&nbsp;&nbsp;&nbsp;Virtual Reality and Augmented Reality
+						</p>
+					</a>
+					<a href="blog-post.html?date=2025-03-20">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2025-03-20</span>&nbsp;&nbsp;&nbsp;Big Data and Analytics
+						</p>
+					</a>
+					<a href="blog-post.html?date=2025-04-15">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2025-04-15</span>&nbsp;&nbsp;&nbsp;The Future of E-commerce
+						</p>
+					</a>
+					<a href="blog-post.html?date=2025-05-10">
+						<p class="menu-label is-size-6-desktop py-2">
+							<span class="has-text-grey-light">2025-05-10</span>&nbsp;&nbsp;&nbsp;Sustainable Living Tips
+						</p>
+					</a>
+			</div>
+		</section>
+
+		<section class="section stat is-fullheight">
+			<h1 class="is-size-2-desktop is-size-4-tablet mb-6">Our Blog At One Glance</h1>
+			<div class="container stats columns">
+				<div class="column">
+					<div class="is-flex is-justify-content-space-around mr-auto stat-item">
+						<div class="roboto js-count-up stat-int" akhi="12800">0</div>
+						<div class="roboto is-size-4 is-capitalized is-flex is-align-items-center">Our Blog<br/>Views</div>
+					</div>
+					<div class="is-flex is-justify-content-space-around mr-auto stat-item mt-4">
+						<div class="roboto js-count-up stat-int" akhi="256">0</div>
+						<div class="roboto is-size-4 is-capitalized is-flex is-align-items-center">Articles<br/>Written</div>
+					</div>
+					<div class="is-flex is-justify-content-space-around mr-auto stat-item mt-4">
+						<div class="roboto js-count-up stat-int" akhi="1500">0</div>
+						<div class="roboto is-size-4 is-capitalized is-flex is-align-items-center">Happy<br/>Readers</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="is-flex is-justify-content-space-around mr-auto stat-item">
+						<div class="roboto js-count-up stat-int" akhi="12800">0</div>
+						<div class="roboto is-size-4 is-capitalized is-flex is-align-items-center">Our Blog<br/>Views</div>
+					</div>
+					<div class="is-flex is-justify-content-space-around mr-auto stat-item mt-4">
+						<div class="roboto js-count-up stat-int" akhi="256">0</div>
+						<div class="roboto is-size-4 is-capitalized is-flex is-align-items-center">Articles<br/>Written</div>
+					</div>
+					<div class="is-flex is-justify-content-space-around mr-auto stat-item mt-4">
+						<div class="roboto js-count-up stat-int" akhi="1500">0</div>
+						<div class="roboto is-size-4 is-capitalized is-flex is-align-items-center">Happy<br/>Readers</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="content has-text-centered is-fullwidth">
+				<div class="columns is-flex is-justify-content-space-around">
+					<div class="column is-6 is-flex is-justify-content-center is-flex-direction-column">
+						<h4 class="title">Newsletter</h4>
+						<div class="field has-addons is-flex is-justify-content-center">
+							<div class="control ">
+								<input class="input" type="email" placeholder="Enter your email">
+							</div>
+							<div class="control ">
+								<button class="button is-primary">Subscribe</button>
+							</div>
+						</div>
+					</div>
+
+				<div class="mt-4 container">
+					<a href="index.html" class="mx-2 is-block pb-4">Home</a>
+					<a href="contact.html" class="mx-2 is-block pb-4">Contact US</a>
+					<a href="index.html" class="mx-2 is-block pb-4">About US</a>
+				</div>
+			</div>
+			</div>
+		</footer>
+	</body>
+</html>
+</section>
